@@ -7,7 +7,7 @@ import operator
 
 
 def sort_stories_by_votes(hnlist):
-    return sorted(hnlist, key=lambda k: k['votes'], reverse=True)
+    return sorted(hnlist, key=lambda k: k['voes'], reverse=True)
 
 
 def create_custom_page_hn(links, subtext):
