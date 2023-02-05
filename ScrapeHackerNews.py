@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import pprint
-import operator
-
 
 
 def sort_stories_by_votes(hnlist):
@@ -20,7 +18,7 @@ def create_custom_page_hn(links, subtext):
 
         if len(vote):
             points = int(vote[0].getText().replace(' points', ''))
-            if points > 199:
+            if points > 99:
                 hn.append({'votes': points, 'title': title, 'link': href})
                 count += 1
 
